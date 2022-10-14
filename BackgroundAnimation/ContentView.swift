@@ -19,15 +19,51 @@ struct ContentView: View {
             
             VStack {
                 RoundedRectangle(cornerRadius: 20)
+                    .fill(Material.thin)
                     .frame(width: 300, height: 150)
-                    .foregroundColor(.white)
                     .shadow(color: .black.opacity(0.1), radius: 10, x: 10, y: 10)
+                    .overlay {
+                        VStack {
+                            HStack {
+                                Image(systemName: "person.circle")
+                                
+                                Text("Title")
+                                    .redacted(reason: .placeholder)
+                                Spacer()
+                            }
+                            .foregroundColor(.blue)
+                            .font(.title)
+                            
+                            Text("Title aldjfljdd fölasjdfölk asdölkasdjflj sdfölaksdjf asöldkfj asdlökfj asöldkfj aösldkfj asdölkfj")
+                                .redacted(reason: .placeholder)
+                            
+                            Spacer()
+                        }.padding()
+                    }
                     .padding()
                 
                 RoundedRectangle(cornerRadius: 20)
+                    .fill(Material.thin)
                     .frame(width: 300, height: 150)
-                    .foregroundColor(.white)
                     .shadow(color: .black.opacity(0.1), radius: 10, x: 10, y: 10)
+                    .overlay {
+                        VStack {
+                            HStack {
+                                Image(systemName: "person.circle")
+                                
+                                Text("Title")
+                                    .redacted(reason: .placeholder)
+                                Spacer()
+                            }
+                            .foregroundColor(.blue)
+                            .font(.title)
+                            
+                            Text("Title aldjfljdd fölasjdfölk asdölkasdjflj sdfölaksdjf asöldkfj asdlökfj asöldkfj aösldkfj asdölkfj")
+                                .redacted(reason: .placeholder)
+                            
+                            Spacer()
+                        }.padding()
+                    }
                     .padding()
                     
             }
